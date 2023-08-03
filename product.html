@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making anis express">
+    <title>ecommerce project</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navbar starts here -->
+<i class="fas fa-bars fa-2x" id="menu-icon"></i>
+<nav id="menu" class="hidden">
+    <ul class="nav-upper
+    flex-space-around">
+        <li class="nav_list">
+            <a href="index.html"
+            class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="Register.html"
+            class="nav_link">register</a>
+        </li>
+        <li class="nav_list">
+            <a href="login.html"
+            class="nav_link">Login</a>
+        </li>
+        <li class="nav_list">
+            <a href="/index.html"
+            class="nav_link">Logout</a>
+        </li>
+        <li class="nav_list">
+            <a href="contact.html"
+            class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+            <a href="profile.html"
+            class="nav_link">
+            <img class="profile-icon" src="./images/profile.jpg" alt="profile icon">
+        </a>
+        </li>
+    </ul>
+
+    <ul class="nav-lower 
+    flex-space-around">
+    <li class="nav-list">
+        <a href="/index.html" class="nav_brand 
+        nav_link">Anis Express</a>
+    </li>
+    <li class="nav-list">
+        <a href="/cart.html" 
+        class="nav_link">
+        <span><i class="fa-solid
+            fa-cart-shopping"></i> </span>
+          Cart 2 products - $124.40  
+    </a>
+    </li>
+</ul>
+</nav>
+<!-- navbar ends here -->
+
+<main class="flex-center">
+    <div class="main-content">
+        <section class="product-details flex-center">
+            <div class="product_details-left flex-center">
+                <img src="./images/product1.avif" alt="product1">
+            </div>
+            <div class="product_details-right">
+                <h3 class="product_name">Sony V-4 Headphone</h3>
+                <p>
+                    <span class="dot green"></span>
+                    <span class="dot black"></span> 
+                    <span class="dot red"></span>
+                </p>
+                <p class="product_description">
+                    <strong>Description: </strong>
+                   Lorem ipsum, dolor sit amet consectetur 
+                   adipisicing elit. Porro impedit, nihil quia
+                   placeat autem commodi... 
+                </p>
+                <p class="product_description">
+                    Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Porro impedit, nihil quia
+                    placeat autem commodi... 
+                 </p>
+
+                 <h4 class="product_category">Category: Headphone</h4>
+                <h4 class="product_price">price: $225.99</h4>
+                <p class="product_rating">Rating: 4.5/5</p>
+                <button class="btn product_button">Add To Cart</button>
+                <button class="btn product_button">Back To shopping</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+<!-- footer starts here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:
+            </label>
+            <input type="email" id="subscribe"
+            name="subscribe" class="footer_input"
+            placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; copyright 2023 Tamim Express. All rights
+                rserved</p>
+        </div>
+    </footer>
+
+<!-- footer ends here -->
+<script src="./scripts/index.js"></script>
+</body>
+</html>

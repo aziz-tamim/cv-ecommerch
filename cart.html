@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making anis express">
+    <title>ecommerce project</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navbar starts here -->
+<i class="fas fa-bars fa-2x" id="menu-icon"></i>
+<nav id="menu" class="hidden">
+    <ul class="nav-upper
+    flex-space-around">
+        <li class="nav_list">
+            <a href="index.html"
+            class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="Register.html"
+            class="nav_link">register</a>
+        </li>
+        <li class="nav_list">
+            <a href="login.html"
+            class="nav_link">Login</a>
+        </li>
+        <li class="nav_list">
+            <a href="/index.html"
+            class="nav_link">Logout</a>
+        </li>
+        <li class="nav_list">
+            <a href="contact.html"
+            class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+            <a href="profile.html"
+            class="nav_link">
+            <img class="profile-icon" src="./images/profile.jpg" alt="profile icon">
+        </a>
+        </li>
+    </ul>
+
+    <ul class="nav-lower 
+    flex-space-around">
+    <li class="nav-list">
+        <a href="/index.html" class="nav_brand 
+        nav_link">Anis Express</a>
+    </li>
+    <li class="nav-list">
+        <a href="/cart.html" 
+        class="nav_link">
+        <span><i class="fa-solid
+            fa-cart-shopping"></i> </span>
+          Cart 2 products - $124.40  
+    </a>
+    </li>
+</ul>
+</nav>
+<!-- navbar ends here -->
+
+<main>
+   <div class="cart flex-center">
+    <div class="cart_items">
+        <div class="cart_items-heading card">
+            <h2>shopping cart [2 items]</h2>
+            <div class="cart_items-action">
+                <label for="select">
+                    <input type="checkbox" name="select"
+                    id="select">
+                    select all items
+                </label>
+                <button class="btn">
+                    <i class="fas fa-trash-alt"></i>
+                </button>
+                <button class="btn">Shop More</button>
+            </div>
+        </div>
+
+        <div class="cart_item card flex-space-around">      
+           <input type="checkbox" name="" id=""> 
+           <img src="./images/product1.avif" alt="product1" class="cart_item-img">
+           <div class="cart_item-description">
+            <h3 class="product_name">Sony V-4 Headphone</h3>
+            <h4 class="product_price">price: $225.99</h4>
+            <p class="cart_item-shipping">Free Shipping</p>
+           </div>
+           <div class="cart_item-actions">
+            <button class="btn"><i class="fas fa-trash-alt"></i></button>
+            <div>
+                <button class="btn"><i class="fas fa-add"></i></button>
+                <span>3</span> 
+                <button class="btn"><i class="fas fa-minus"></i></button> 
+            </div>
+           </div>
+        </div>
+
+
+        <div class="cart_item card flex-space-around">      
+            <input type="checkbox" name="" id=""> 
+            <img src="./images/product3.avif" alt="product3" class="cart_item-img">
+            <div class="cart_item-description">
+             <h3 class="product_name">Nike Shoes</h3>
+             <h4 class="product_price">price: $115.99</h4>
+             <p class="cart_item-shipping">Shipping cost $2.50</p>
+            </div>
+            <div class="cart_item-actions">
+             <button class="btn"><i class="fas fa-trash-alt"></i></button>
+             <div>
+                 <button class="btn"><i class="fas fa-add"></i></button>
+                 <span>1</span> 
+                 <button class="btn"><i class="fas fa-minus"></i></button> 
+             </div>
+            </div>
+         </div>
+
+
+    </div>
+    <div class="cart_payment">
+        <div class="cart_payment-summary card">
+            <h2>payment summary</h2>
+            <div>
+                <p>subtotal:</p>
+                <p>$341.44</p>
+            </div>
+            <div>
+                <p>shipping cost:</p>
+                <p>$2.50</p>
+            </div>
+            <div>
+                <p>Total cost: </p>
+                <p>$344.38</p>
+            </div>
+            <button class="btn cart_payment-btn">Pay Now</button>
+        </div>
+        <div class="cart_payment-methods card">
+            <h2>payment Methods</h2>
+            <div>
+                <i class="fa-brands fa-cc-visa fa-3x"></i>
+                <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                <i class="fa-brands fa-cc-amex fa-3x"></i>
+                <i class="fa-brands fa-cc-amazon-pay fa-3x"></i>
+                <i class="fa-brands fa-cc-paypal fa-3x"></i>
+            </div>
+        </div>
+    </div>
+   </div>
+</main>
+<!-- footer starts here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:
+            </label>
+            <input type="email" id="subscribe"
+            name="subscribe" class="footer_input"
+            placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; copyright 2023 Tamim Express. All rights
+                rserved</p>
+        </div>
+    </footer>
+
+<!-- footer ends here -->
+<script src="./scripts/index.js"></script>
+</body>
+</html>

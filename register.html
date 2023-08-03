@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is an ecommerce project for making anis express">
+    <title>ecommerce project</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- navbar starts here -->
+<i class="fas fa-bars fa-2x" id="menu-icon"></i>
+<nav id="menu" class="hidden">
+    <ul class="nav-upper
+    flex-space-around">
+        <li class="nav_list">
+            <a href="index.html"
+            class="nav_link">Home</a>
+        </li>
+        <li class="nav_list">
+            <a href="Register.html"
+            class="nav_link">register</a>
+        </li>
+        <li class="nav_list">
+            <a href="login.html"
+            class="nav_link">Login</a>
+        </li>
+        <li class="nav_list">
+            <a href="/index.html"
+            class="nav_link">Logout</a>
+        </li>
+        <li class="nav_list">
+            <a href="contact.html"
+            class="nav_link">Contact</a>
+        </li>
+        <li class="nav_list">
+            <a href="profile.html"
+            class="nav_link">
+            <img class="profile-icon" src="./images/profile.jpg" alt="profile icon">
+        </a>
+        </li>
+    </ul>
+
+    <ul class="nav-lower 
+    flex-space-around">
+    <li class="nav-list">
+        <a href="/index.html" class="nav_brand 
+        nav_link">Anis Express</a>
+    </li>
+    <li class="nav-list">
+        <a href="/cart.html" 
+        class="nav_link">
+        <span><i class="fa-solid
+            fa-cart-shopping"></i> </span>
+          Cart 2 products - $124.40  
+    </a>
+    </li>
+</ul>
+</nav>
+<!-- navbar ends here -->
+
+<main>
+    <section class="register">
+        <h2 class="section-title text-center">User
+       Registration</h2>
+       <div class="card">
+        <form action="" class="form">
+            <div class="form-control flex-center">
+                <label for="name">Name</label>
+                <input type="text" id="name" required
+                autocomplete="name">
+            </div>
+              <div class="form-control flex-center">
+                <label for="email">Email</label>
+                <input type="email" id="email" required
+                autocomplete="email">
+            </div>
+            <div class="form-control flex-center">
+                <label for="password">Password</label>
+                <input type="password" id="password" required
+                autocomplete="password">
+            </div>
+            <div class="form-control flex-center">
+                <label for="about">About Me</label>
+                <textarea name="about" id="about"></textarea>
+            </div>
+            <div class="form-control flex-center form-btn-field">
+                <button type="submit" class="btn contact-btn">Submit</button>
+            </div>
+        </form>
+       </div>
+    </section>
+</main>
+<!-- footer starts here -->
+    <footer class="footer flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:
+            </label>
+            <input type="email" id="subscribe"
+            name="subscribe" class="footer_input"
+            placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; copyright 2023 Tamim Express. All rights
+                rserved</p>
+        </div>
+    </footer>
+
+<!-- footer ends here -->
+<script src="./scripts/index.js"></script>
+</body>
+</html>
